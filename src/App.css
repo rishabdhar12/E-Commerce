@@ -3,6 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root {
+  --clr-furniture-1: #eaded7;
+  --clr-furniture-2: #c5a491;
+  --clr-furniture-3: #fff;
+}
 /* Navbar */
 .navbar {
   width: 100%;
@@ -60,3 +65,60 @@
   margin-left: 5px;
 }
 /* End of Navbar */
+
+/* Furniture */
+.furniture {
+  background-color: var(--clr-furniture-1);
+}
+.section-center {
+  transform: translateY(5rem);
+  margin: 0 auto;
+  width: 90vw;
+  max-width: 1170px;
+}
+.section-header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.section-header h2 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+.section-header p {
+  font-size: 1rem;
+}
+.services-center {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+}
+.service {
+  background-color: var(--clr-furniture-2);
+  text-align: center;
+  padding: 2.5rem;
+  border-radius: 5px;
+}
+.service-icon {
+  height: 4rem;
+  width: 4rem;
+  place-items: center;
+  background-color: var(--clr-furniture-3);
+  border-radius: 50%;
+  display: grid;
+  margin: 0 auto 1rem;
+}
+.icon {
+  font-size: 2rem;
+}
+.service h4 {
+  padding: 1rem 0;
+  font-size: 1.5rem;
+}
+.service p {
+  line-height: 1.8;
+}
+/* End of Furniture */
+
+/* Newsletter */
+
+/* End of Newsletter */

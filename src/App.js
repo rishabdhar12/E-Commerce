@@ -8,6 +8,7 @@ import Products from "./Pages/Products";
 import SingleProduct from "./Pages/SingleProduct";
 import Error from "./Pages/Error";
 import Navbar from "./Components/Navbar";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
