@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Footer from "../Components/Footer";
 import "../App.css";
 
 import { GiCompass, GiDiamondHard, GiPapers } from "react-icons/gi";
