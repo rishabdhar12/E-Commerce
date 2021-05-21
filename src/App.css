@@ -1,7 +1,7 @@
 :root {
   --clr-background: #f7f7f7;
-  --clr-home-font-1: #296c8b;
-  --clr-home-heading-1: #1c084d;
+  --clr-home-font-1: #295264;
+  --clr-home-heading-1: #010d1d;
   --clr-home-item-background-1: #ebebeb;
 
   --clr-home-item-background-2: #d4b8b5;
@@ -36,6 +36,7 @@
   height: 60px;
   top: 0;
   left: 0;
+  background-color: var(--clr-background);
 }
 .nav-center {
   display: flex;
@@ -108,7 +109,7 @@ main{
   
 }
 .text-section{
-  padding-left: 20%;
+  padding-left: 15%;
 }
 
 .text-section p {
@@ -125,7 +126,7 @@ h2,
 h3,
 h4 {
   text-transform: capitalize;
-  line-height: 4.25rem;
+  line-height: 2rem;
   margin-bottom: 0.75rem;
 }
 
@@ -161,6 +162,7 @@ h4 {
 }
 .text-section h2{
   letter-spacing: 0.20rem;
+  line-height: 4rem;
   margin-bottom: 2rem;
   font-size: 3.5rem;
   color: var(--clr-home-heading-1);
