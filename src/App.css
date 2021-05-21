@@ -3,13 +3,7 @@
   --clr-home-font-1: #295264;
   --clr-home-heading-1: #010d1d;
   --clr-home-item-background-1: #ebebeb;
-
-  --clr-home-item-background-2: #d4b8b5;
-  --clr-home-item-foreground-2: #bd746c;
   
-  --clr-home-heading-2: #130000;
-  --clr-home-font-2: #7c2c2c;
-
 
   --clr-home-btn: #ac7a63;
   --clr-home-btn-font: #ffebeb;
@@ -288,6 +282,8 @@ h4 {
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
 }
+
 /* .newsletter-form button {
 } */
+
 /* End of Newsletter */
