@@ -7,17 +7,26 @@ const Home = () => {
   return (
     <React.Fragment>
       <section className="horizontal-container first-container">
-        <article className='text-section'>
-          <h2>Design your Comfort Zone</h2>
+        <article className="text-section">
+          <h3>Design your</h3>
+          <h3>Comfort Zone</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel recusandae molestiae unde non suscipit sint consequuntur consectetur pariatur atque est.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, voluptatem.
-            </p>
-          <Link to='/products' className='btn'>Shop Now</Link>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+            recusandae molestiae unde non suscipit sint consequuntur consectetur
+            pariatur atque est. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Dicta, voluptatem.
+          </p>
+          <Link to="/products" className="btn">
+            Shop Now
+          </Link>
         </article>
-        <article className='hero-images'>
-          <img src="/Images/hero-bcg.a876f19f.jpeg" alt="" class='img-main' />
-          <img src="/Images/hero-bcg-2.78991864.jpeg" alt="" class='img-secondary' />
+        <article className="hero-images">
+          <img src="/Images/hero-bcg.a876f19f.jpeg" alt="" class="img-main" />
+          <img
+            src="/Images/hero-bcg-2.78991864.jpeg"
+            alt=""
+            class="img-secondary"
+          />
         </article>
       </section>
       {/* Furniture */}

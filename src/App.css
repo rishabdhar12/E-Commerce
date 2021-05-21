@@ -3,7 +3,12 @@
   --clr-home-font-1: #295264;
   --clr-home-heading-1: #010d1d;
   --clr-home-item-background-1: #ebebeb;
-  
+
+  --clr-home-item-background-2: #d4b8b5;
+  --clr-home-item-foreground-2: #bd746c;
+
+  --clr-home-heading-2: #130000;
+  --clr-home-font-2: #7c2c2c;
 
   --clr-home-btn: #ac7a63;
   --clr-home-btn-font: #ffebeb;
@@ -13,15 +18,19 @@
   --clr-home-hero-image-bg: #e2cbc7;
 
   --clr-footer-background: #2c2c2c;
-  --clr-footer-text: #ad6f64;
+  --clr-footer-text: #96594e;
 
   --clr-furniture-1: #eaded7;
   --clr-furniture-2: #c5a491;
   --clr-furniture-3: #fff;
+  --clr-furniture-4: #453227;
+  --clr-furniture-5: #795744;
+  --clr-furniture-6: #5f4435;
+
+  --clr-newsletter-1: #617d98;
 
   --maximum-height: 1100px;
   --radius: 0.25rem;
-
 }
 
 /* Navbar */
@@ -82,13 +91,12 @@
 }
 /* End of Navbar */
 /* Hero Section */
-main{
+main {
   width: 100%;
   height: auto;
-  
 }
 
-.horizontal-container{
+.horizontal-container {
   display: grid;
   height: calc(100vh - 5rem);
   min-height: 60vh;
@@ -98,11 +106,10 @@ main{
   place-items: center;
 }
 
-.first-container{
+.first-container {
   background-color: var(--clr-background);
-  
 }
-.text-section{
+.text-section {
   padding-left: 15%;
 }
 
@@ -113,7 +120,6 @@ main{
   line-height: 2.25rem;
   margin-bottom: 2.75rem;
 }
-
 
 h1,
 h2,
@@ -137,8 +143,7 @@ h4 {
   font-size: 0.875rem;
 }
 
-
-.text-section .btn{
+.text-section .btn {
   display: inline-block;
   background-color: var(--clr-home-btn);
   color: var(--clr-home-btn-font);
@@ -146,41 +151,37 @@ h4 {
   text-decoration: none;
   text-transform: uppercase;
   border-radius: var(--radius);
-
 }
-.text-section .btn:hover{
+.text-section .btn:hover {
   background-color: var(--clr-home-btn-hover);
   color: var(--clr-home-btn-font-hover);
-  transition-duration: .50s;
-
+  transition-duration: 0.5s;
 }
-.text-section h2{
-  letter-spacing: 0.20rem;
-  line-height: 4rem;
+.text-section h3 {
+  letter-spacing: 0.1rem;
+  line-height: 1rem;
   margin-bottom: 2rem;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   color: var(--clr-home-heading-1);
-
 }
-.hero-images::before{
+.hero-images::before {
   content: "";
   position: absolute;
   width: 15%;
   height: 80%;
   background-color: var(--clr-home-hero-image-bg);
-  bottom:0%;
-  left:0%;
+  bottom: 0%;
+  left: 0%;
   transform: translateX(-100%);
   border-radius: var(--radius);
 }
 
-.hero-images{
+.hero-images {
   display: block;
   position: relative;
 }
 
-
-.hero-images .img-main{
+.hero-images .img-main {
   width: 100%;
   height: 550px;
   position: relative;
@@ -189,7 +190,7 @@ h4 {
   object-fit: cover;
 }
 
-.hero-images .img-secondary{
+.hero-images .img-secondary {
   position: absolute;
   bottom: 0px;
   left: 0px;
@@ -217,11 +218,15 @@ h4 {
 .section-header h2 {
   margin-bottom: 2rem;
   font-size: 2rem;
+  color: var(--clr-furniture-4);
 }
 .section-header p {
   font-size: 1rem;
+  color: var(--clr-furniture-5);
+  line-height: 1.8;
 }
 .services-center {
+  margin-top: 4rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2.5rem;
@@ -247,9 +252,11 @@ h4 {
 .service h4 {
   padding: 1rem 0;
   font-size: 1.5rem;
+  color: var(--clr-furniture-4);
 }
 .service p {
   line-height: 1.8;
+  color: var(--clr-furniture-6);
 }
 /* End of Furniture */
 
@@ -264,6 +271,12 @@ h4 {
 }
 .newsletter-center h2 {
   margin-bottom: 3rem;
+  color: var(--clr-home-heading-1);
+  letter-spacing: 0.1rem;
+}
+.newsletter-center p {
+  line-height: 1.8;
+  color: var(--clr-newsletter-1);
 }
 .newsletter-content {
   display: grid;
@@ -283,7 +296,31 @@ h4 {
   border-bottom-left-radius: 4px;
 }
 
-/* .newsletter-form button {
-} */
+.newsletter-form button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: 2px solid black;
+  border-left: none;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  letter-spacing: 0.2rem;
+  background-color: var(--clr-footer-text);
+  transition: all 0.3s linear;
+}
+.newsletter-form button:hover {
+  color: var(--clr-furniture-3);
+}
 
 /* End of Newsletter */
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 2rem 0;
+  background-color: var(--clr-footer-background);
+  letter-spacing: 0.1rem;
+  color: var(--clr-furniture-3);
+}
+.footer span {
+  color: var(--clr-footer-text);
+}
+/* End of Footer */
