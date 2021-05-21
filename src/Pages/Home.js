@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../App.css";
 
 import { GiCompass, GiDiamondHard, GiPapers } from "react-icons/gi";
 
@@ -8,23 +7,18 @@ const Home = () => {
   return (
     <React.Fragment>
       <section className="horizontal-container first-container">
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error
-          explicabo perspiciatis consectetur eveniet, nam minima maxime dolorem
-          soluta quas temporibus laborum dignissimos rerum rem adipisci animi
-          eum placeat quis? Fugit beatae placeat aut dolore sed facere
-          necessitatibus totam, unde est velit cupiditate culpa minus temporibus
-          tempora deleniti deserunt ratione. Est atque pariatur, labore nisi
-          quos nulla suscipit iusto corporis nostrum quo vitae repellat sint
-          excepturi alias. Sequi, animi.
-          <Link to="/products" className="btn">
-            Shop Now
-          </Link>
-        </p>
-        <div className="hero-images">
-          <img src="/Images/hero-bcg.a876f19f.jpeg" alt="" id="img-1" />
-          <img src="/Images/hero-bcg-2.78991864.jpeg" alt="" id="img-2" />
-        </div>
+        <article className='text-section'>
+          <h2>Design your Comfort Zone</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel recusandae molestiae unde non suscipit sint consequuntur consectetur pariatur atque est.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, voluptatem.
+            </p>
+          <Link to='/products' className='btn'>Shop Now</Link>
+        </article>
+        <article className='hero-images'>
+          <img src="/Images/hero-bcg.a876f19f.jpeg" alt="" class='img-main' />
+          <img src="/Images/hero-bcg-2.78991864.jpeg" alt="" class='img-secondary' />
+        </article>
       </section>
       {/* Furniture */}
       <section className="furniture">
