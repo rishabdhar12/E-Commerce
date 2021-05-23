@@ -1,9 +1,3 @@
-import ftBedroom from "../Images/featured-bed.jpg";
-import ftArmchair from "../Images/featured-armchair.jpg";
-import ftDesk from "../Images/wooden-desk.jpeg";
-import ftKitchenTable from "../Images/kitchen-table.jpeg";
-import extra1 from "../Images/extra-1.jpeg";
-
 export default data = [
   {
     id: "1",
@@ -11,7 +5,7 @@ export default data = [
     name: "Bed",
     decription:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel recusandae molestiae unde non suscipit sint consequuntur consectetur pariatur atque est.Lorem ipsum dolor sit amet consectetur adipisicing elit.Dicta, voluptatem.",
-    img1: { ftBedroom },
+    img1: "/Images/products/featured-bed.jpg",
     img2: "/",
     price: 3200,
     company: "Austin",
@@ -25,8 +19,8 @@ export default data = [
     name: "Sofa",
     decription:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel recusandae molestiae unde non suscipit sint consequuntur consectetur pariatur atque est.Lorem ipsum dolor sit amet consectetur adipisicing elit.Dicta, voluptatem.",
-    img1: { ftArmchair },
-    img2: "/",
+    img1: "/Images/products/sofa.jpg",
+    img2: "/Images/products/extra-1.jpeg",
     price: 3200,
     company: "Tata",
     freeshiping: true,
@@ -38,8 +32,8 @@ export default data = [
     category: "Office Room",
     name: "Computer Desk",
     decription: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    img1: { ftDesk },
-    img2: "/",
+    img1: "/Images/products/wooden-desk.jpeg",
+    img2: "/Images/products/extra-1.jpeg",
     price: 4200,
     company: "IKEA",
     freeshiping: true,
@@ -52,8 +46,8 @@ export default data = [
     name: "Arm Chair",
     decription:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel recusandae molestiae unde non suscipit.",
-    img1: "/",
-    img2: "/",
+    img1: "/Images/products/featured-armchair.jpg",
+    img2: "/Images/products/extra-1.jpeg",
     price: 5200,
     company: "Tesla",
     freeshiping: true,
@@ -66,8 +60,8 @@ export default data = [
     name: "Dining Table",
     decription:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel recusandae molestiae unde non suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit.Dicta, voluptatem.",
-    img1: { ftKitchenTable },
-    img2: "/",
+    img1: "/Images/products/kitchen-table.jpeg",
+    img2: "/Images/products/extra-1.jpeg",
     price: 2100,
     company: "IKEA",
     freeshiping: true,
@@ -80,8 +74,8 @@ export default data = [
     name: "Shelf",
     decription:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel recusandae molestiae unde non suscipit.",
-    img1: "/",
-    img2: "/",
+    img1: "/Images/products/bar-stool.jpg",
+    img2: "/Images/products/extra-1.jpeg",
     price: 3100,
     company: "DKR",
     freeshiping: true,
