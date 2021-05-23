@@ -6,6 +6,7 @@ import { GiCompass, GiDiamondHard, GiPapers } from "react-icons/gi";
 const Home = () => {
   return (
     <React.Fragment>
+      {/* Hero */}
       <section className="horizontal-container first-container">
         <article className="text-section">
           <h3>Design your</h3>
@@ -29,6 +30,8 @@ const Home = () => {
           />
         </article>
       </section>
+      {/* Featured */}
+      <section className="featured"></section>
       {/* Furniture */}
       <section className="furniture">
         <div className="section-center">

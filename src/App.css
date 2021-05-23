@@ -90,6 +90,7 @@
   margin-left: 5px;
 }
 /* End of Navbar */
+
 /* Hero Section */
 main {
   width: 100%;
@@ -198,8 +199,11 @@ h4 {
   transform: translateX(-50%);
   border-radius: var(--radius);
 }
-
 /* End of Hero Section */
+
+/* Featured */
+
+/* End of Featured */
 
 /* Furniture */
 .furniture {
@@ -228,7 +232,7 @@ h4 {
 .services-center {
   margin-top: 4rem;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
   gap: 2.5rem;
 }
 .service {
