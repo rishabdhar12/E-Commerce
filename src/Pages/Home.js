@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+// import FeaturedSection from '../Components/Featured';
+
 import { GiCompass, GiDiamondHard, GiPapers } from "react-icons/gi";
 
 const Home = () => {
@@ -30,8 +32,12 @@ const Home = () => {
           />
         </article>
       </section>
+
       {/* Featured */}
-      <section className="featured"></section>
+      <section className="featured">
+        {/* <FeaturedSection /> */}
+      </section>
+
       {/* Furniture */}
       <section className="furniture">
         <div className="section-center">

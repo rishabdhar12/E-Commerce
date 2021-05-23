@@ -1,4 +1,4 @@
-export default data = [
+export default [
   {
     id: "1",
     category: "Bedroom",
@@ -11,7 +11,7 @@ export default data = [
     company: "Austin",
     freeshiping: true,
     available: true,
-    featured: true,
+
   },
   {
     id: "2",
@@ -25,7 +25,6 @@ export default data = [
     company: "Tata",
     freeshiping: true,
     available: true,
-    featured: false,
   },
   {
     id: "3",
@@ -38,7 +37,6 @@ export default data = [
     company: "IKEA",
     freeshiping: true,
     available: true,
-    featured: true,
   },
   {
     id: "4",
@@ -52,7 +50,6 @@ export default data = [
     company: "Tesla",
     freeshiping: true,
     available: true,
-    featured: false,
   },
   {
     id: "5",
@@ -66,7 +63,6 @@ export default data = [
     company: "IKEA",
     freeshiping: true,
     available: true,
-    featured: true,
   },
   {
     id: "6",
@@ -80,6 +76,5 @@ export default data = [
     company: "DKR",
     freeshiping: true,
     available: true,
-    featured: false,
   },
 ];
