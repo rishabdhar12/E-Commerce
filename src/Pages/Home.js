@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "../App.css";
 
-// import FeaturedSection from '../Components/Featured';
+import FeaturedSection from "../Components/Featured";
 
 import { GiCompass, GiDiamondHard, GiPapers } from "react-icons/gi";
 
@@ -35,7 +36,9 @@ const Home = () => {
 
       {/* Featured */}
       <section className="featured">
-        {/* <FeaturedSection /> */}
+        <div className="section-center">
+          <FeaturedSection />
+        </div>
       </section>
 
       {/* Furniture */}

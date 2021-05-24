@@ -29,7 +29,6 @@
 
   --clr-newsletter-1: #617d98;
 
-
   --clr-featured-backgraound: #b7c4c7;
 
   --maximum-height: 1100px;
@@ -205,11 +204,45 @@ h4 {
 /* End of Hero Section */
 
 /* Featured */
-
-.featured{
-  background-color: var(--clr-featured-background);
+.featured {
+  background-color: #f1f5f8;
 }
-
+.featured .section-center {
+  margin: 0 auto;
+  width: 90vw;
+  max-width: 1170px;
+  text-align: center;
+  padding-top: 7rem;
+  padding-bottom: 10rem;
+}
+.featured-items {
+  display: inline-block;
+  margin: 5rem 0;
+  padding: 0 2rem;
+}
+.featured h1 {
+  color: var(--clr-home-heading-1);
+  font-size: 2.5rem;
+  letter-spacing: 0.1rem;
+}
+.underline {
+  width: 6rem;
+  height: 0.25rem;
+  background-color: var(--clr-home-item-foreground-2);
+  margin: 0 auto;
+}
+.ftImage {
+  height: 200px;
+  width: 300px;
+  border-radius: 5px;
+}
+.ftInfo {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+  letter-spacing: 0.2rem;
+  font-size: 1rem;
+}
 .featured .btn {
   display: inline-block;
   background-color: var(--clr-home-btn);
@@ -218,11 +251,11 @@ h4 {
   text-decoration: none;
   text-transform: uppercase;
   border-radius: var(--radius);
+  transition: all 0.3s linear;
 }
 .featured .btn:hover {
   background-color: var(--clr-home-btn-hover);
   color: var(--clr-home-btn-font-hover);
-  transition: 0.5s linear;
 }
 
 /* End of Featured */
@@ -332,6 +365,7 @@ h4 {
   letter-spacing: 0.2rem;
   background-color: var(--clr-footer-text);
   transition: all 0.3s linear;
+  cursor: pointer;
 }
 .newsletter-form button:hover {
   color: var(--clr-furniture-3);
