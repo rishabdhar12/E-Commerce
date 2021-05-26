@@ -1,5 +1,5 @@
 :root {
-  --clr-background: #f7f7f7;
+  --clr-background: #fdfdfd;
   --clr-home-font-1: #295264;
   --clr-home-heading-1: #010d1d;
   --clr-home-item-background-1: #ebebeb;
@@ -29,7 +29,7 @@
 
   --clr-newsletter-1: #617d98;
 
-  --clr-featured-backgraound: #b7c4c7;
+  --clr-featured-backgraound: #eaeef1;
 
   --maximum-height: 1100px;
   --radius: 0.25rem;
@@ -48,6 +48,7 @@
   justify-content: space-between;
   align-items: center;
   width: 90%;
+  
 }
 .nav-header {
   margin: 0.5rem 2rem;
@@ -205,7 +206,7 @@ h4 {
 
 /* Featured */
 .featured {
-  background-color: #f1f5f8;
+  background-color: var(--clr-featured-backgraound);
 }
 .featured .section-center {
   margin: 0 auto;

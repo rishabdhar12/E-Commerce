@@ -1,7 +1,12 @@
 import React from "react";
+import Sidebar from '../Components/Sidebar';
 
 const Products = () => {
-  return <div>Products</div>;
+  return (
+    <React.Fragment>
+      <Sidebar />
+    </React.Fragment>
+  );
 };
 
 export default Products;
