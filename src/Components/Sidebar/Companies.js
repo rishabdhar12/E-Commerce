@@ -1,12 +1,12 @@
 import React from "react";
 
-const Companies = ({ companies }) => {
+const Companies = ({ companies, changeCompany }) => {
     return (
-        <select>
+        <select onChange={() => changeCompany}>
             {
                 companies.map((company, index) => {
                     return (
-                        <option value={company} key={index}>{company}</option>
+                        <option key={index} value={company}>{company}</option>
                     )
                 })
             }

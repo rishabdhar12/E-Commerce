@@ -1,13 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Categories = ({ categories }) => {
+const Categories = ({ categories, changeCategory }) => {
     return (
         <React.Fragment>
             {
                 categories.map((category, index) => {
                     return (
-                        <Link key={index}>{category}</Link>
+                        <div key={index}>
+                            <button onClick={() => changeCategory(category)}>{category}</button>
+                        </div>
                     )
                 })
             }

@@ -11,14 +11,14 @@ const getAllCategories = ['all', ...new Set(products.map((product) => product.ca
 const getAllCompanies = ['all', ...new Set(products.map((product) => product.company))];
 const maxPrice = Math.max([products.map((product) => product.price)]);
 
-const Sidebar = () => {
-    const [furnitureProducts, setFurnitureProducts] = React.useState(products);
+const Sidebar = ({ changeCategory }) => {
     const [categories, setCategories] = React.useState(getAllCategories);
     const [companies, setCompanies] = React.useState(getAllCompanies);
 
     return (
         <article className="Sidebar">
-            <Categories categories={categories} />
+            <Categories categories={categories} changeCategory={changeCategory} />
+
             <Companies companies={companies} />
             <PriceSlider price={maxPrice} />
         </article>

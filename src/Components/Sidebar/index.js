@@ -1,10 +1,10 @@
 import React from 'react';
 import Sidebar from './Sidebar';
 
-const Index = () => {
+const Index = ({ changeCategory }) => {
     return (
         <React.Fragment>
-            <Sidebar />
+            <Sidebar changeCategory={changeCategory} />
         </React.Fragment>
     )
 }
