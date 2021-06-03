@@ -1,12 +1,12 @@
-import React from 'react';
-import Sidebar from './Sidebar';
+import React from "react";
+import Sidebar from "./Sidebar";
 
-const Index = ({ changeCategory }) => {
-    return (
-        <React.Fragment>
-            <Sidebar changeCategory={changeCategory} />
-        </React.Fragment>
-    )
-}
+const Index = ({ changeCategory, changeCompany }) => {
+  return (
+    <React.Fragment>
+      <Sidebar changeCategory={changeCategory} changeCompany={changeCompany} />
+    </React.Fragment>
+  );
+};
 
-export default Index
+export default Index;
