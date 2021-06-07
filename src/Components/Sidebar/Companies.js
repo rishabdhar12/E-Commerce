@@ -2,7 +2,7 @@ import React from "react";
 
 const Companies = ({ companies, changeCompany }) => {
     return (
-        <select onChange={() => changeCompany}>
+        <select onChange={changeCompany}>
             {
                 companies.map((company, index) => {
                     return (

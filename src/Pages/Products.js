@@ -3,35 +3,49 @@ import Sidebar from '../Components/Sidebar';
 import products from '../data/data';
 import Menu from '../Components/Menu';
 
-const Products = () => {
-  const [furnitureProducts, setFurnitureProducts] = React.useState(products);
-  const changeCategory = (category) => {
-    console.log(category);
-    if (category === 'all') {
-      setFurnitureProducts(products);
-      return;
+
+const ACTION = {
+  change_category: 'change_category',
+  change_company: 'change_company'
+}
+
+const reducer = (state, action) => {
+  if (action.type === ACTION.change_category) {
+    console.log(action.payload);
+    if (action.payload === 'all') {
+      return products
     }
-    const newProducts = products.filter((product) => product.category === category);
-    setFurnitureProducts(newProducts);
-    return;
+    return products.filter((product) => product.category === action.payload)
   }
 
-  // const changeCompany = (company) => {
-  //   console.log(company);
-  //   if (company === 'all') {
-  //     setFurnitureProducts(products);
-  //     return;
-  //   }
-  //   const newProducts = products.filter((product) => product.company === company);
-  //   setFurnitureProducts(newProducts);
-  //   return;
-  // }
+  if (action.type === ACTION.change_company) {
+    console.log(action.payload);
+    if (action.payload === 'all') {
+      return products;
+    }
+    return products.filter((product) => product.company === action.payload)
+  }
+}
+
+
+const Products = () => {
+
+  const [state, dispatch] = React.useReducer(reducer, products);
+
+  const changeCategory = (categorySelected) => {
+    dispatch({ type: ACTION.change_category, payload: categorySelected });
+  }
+
+  const changeCompany = (e) => {
+    let companySelected = e.target.value
+    dispatch({ type: ACTION.change_company, payload: companySelected });
+  }
 
 
   return (
     <React.Fragment>
-      <Sidebar changeCategory={changeCategory} />
-      <Menu furnitureProducts={furnitureProducts} />
+      <Sidebar changeCategory={changeCategory} changeCompany={changeCompany} />
+      <Menu furnitureProducts={state} />
     </React.Fragment>
   );
 };

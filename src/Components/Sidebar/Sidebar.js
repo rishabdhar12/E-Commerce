@@ -7,19 +7,16 @@ import PriceSlider from './PriceSlider';
 
 import './Sidebar.css';
 
-const getAllCategories = ['all', ...new Set(products.map((product) => product.category))];
-const getAllCompanies = ['all', ...new Set(products.map((product) => product.company))];
+const categories = ['all', ...new Set(products.map((product) => product.category))];
+const companies = ['all', ...new Set(products.map((product) => product.company))];
 const maxPrice = Math.max([products.map((product) => product.price)]);
 
-const Sidebar = ({ changeCategory }) => {
-    const [categories, setCategories] = React.useState(getAllCategories);
-    const [companies, setCompanies] = React.useState(getAllCompanies);
-
+const Sidebar = ({ changeCategory, changeCompany }) => {
     return (
         <article className="Sidebar">
             <Categories categories={categories} changeCategory={changeCategory} />
 
-            <Companies companies={companies} />
+            <Companies companies={companies} changeCompany={changeCompany} />
             <PriceSlider price={maxPrice} />
         </article>
     )
