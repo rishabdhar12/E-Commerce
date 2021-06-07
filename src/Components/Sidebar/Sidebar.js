@@ -1,11 +1,11 @@
-import React from 'react';
-import products from '../../data/data';
+import React from "react";
+import products from "../../data/data";
 
-import Categories from './Categories';
-import Companies from './Companies';
-import PriceSlider from './PriceSlider';
+import Categories from "./Categories";
+import Companies from "./Companies";
+import PriceSlider from "./PriceSlider";
 
-import './Sidebar.css';
+import "./Sidebar.css";
 
 const categories = ['all', ...new Set(products.map((product) => product.category))];
 const companies = ['all', ...new Set(products.map((product) => product.company))];

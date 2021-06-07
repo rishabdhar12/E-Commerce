@@ -1,7 +1,8 @@
 import React from "react";
-import Sidebar from '../Components/Sidebar';
-import products from '../data/data';
-import Menu from '../Components/Menu';
+import Sidebar from "../Components/Sidebar";
+import products from "../data/data";
+import Menu from "../Components/Menu";
+
 
 
 const ACTION = {
@@ -40,7 +41,6 @@ const Products = () => {
     let companySelected = e.target.value
     dispatch({ type: ACTION.change_company, payload: companySelected });
   }
-
 
   return (
     <React.Fragment>

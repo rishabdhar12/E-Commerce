@@ -1,7 +1,8 @@
-import React from 'react';
-import Sidebar from './Sidebar';
+import React from "react";
+import Sidebar from "./Sidebar";
 
 const Index = ({ changeCategory, changeCompany }) => {
+
     return (
         <React.Fragment>
             <Sidebar changeCategory={changeCategory} changeCompany={changeCompany} />
@@ -9,4 +10,4 @@ const Index = ({ changeCategory, changeCompany }) => {
     )
 }
 
-export default Index
+export default Index;
