@@ -48,7 +48,6 @@
   justify-content: space-between;
   align-items: center;
   width: 90%;
-  
 }
 .nav-header {
   margin: 0.5rem 2rem;
@@ -373,6 +372,11 @@ h4 {
 }
 
 /* End of Newsletter */
+
+/* Products */
+
+/* End of Products */
+
 /* Footer */
 .footer {
   text-align: center;

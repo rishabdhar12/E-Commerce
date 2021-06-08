@@ -11,8 +11,8 @@ export default class Slider extends React.Component {
         <input
           type="range"
           min={0}
-          max={this.props.price}
-          value={this.state.value}
+          max={this.props.maxPrice}
+          value="100"
           onChange={this.handleOnChange}
         />
         <div className="value">{this.state.value}</div>
