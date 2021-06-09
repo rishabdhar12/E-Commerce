@@ -1,12 +1,15 @@
 import React from "react";
 import Sidebar from "./Sidebar";
 
-const Index = ({ changeCategory, changeCompany }) => {
+const Index = ({ changeCategory, changeCompany, changePriceRange, clearFilter }) => {
 
     return (
-        <React.Fragment>
-            <Sidebar changeCategory={changeCategory} changeCompany={changeCompany} />
-        </React.Fragment>
+        <div>
+            <Sidebar changeCategory={changeCategory}
+                changeCompany={changeCompany}
+                changePriceRange={changePriceRange}
+                clearFilter={clearFilter} />
+        </div>
     )
 }
 

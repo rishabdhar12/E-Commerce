@@ -1,10 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../App.css";
 
-import FeaturedSection from "../Components/Featured";
+import FeaturedSection from "../../Components/Featured";
 
 import { GiCompass, GiDiamondHard, GiPapers } from "react-icons/gi";
+
+//css
+import "./Home.css";
 
 const Home = () => {
   return (

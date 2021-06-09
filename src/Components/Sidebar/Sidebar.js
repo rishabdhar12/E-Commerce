@@ -16,16 +16,16 @@ const companies = [
   ...new Set(products.map((product) => product.company)),
 ];
 
-const maxPrice = Math.max(...products.map((product) => product.price));
-console.log(maxPrice);
+const maxPrice = Math.max(...products.map((product) => product.price)) + 100;
 
-const Sidebar = ({ changeCategory, changeCompany }) => {
+const Sidebar = ({ changeCategory, changeCompany, changePriceRange, clearFilter }) => {
   return (
     <article className="Sidebar">
       <Categories categories={categories} changeCategory={changeCategory} />
 
       <Companies companies={companies} changeCompany={changeCompany} />
-      <PriceSlider maxPrice={maxPrice} />
+      <PriceSlider maxPrice={maxPrice} changePriceRange={changePriceRange} />
+      <button onClick={clearFilter}>Clear Filter</button>
     </article>
   );
 };
