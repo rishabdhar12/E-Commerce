@@ -4,18 +4,23 @@ export default class Slider extends React.Component {
   state = {
     value: 0,
   };
-  handleOnChange = (e) => this.setState({ value: e.target.value });
+  handleOnChange = (e) => {
+    this.setState({ value: e.target.value });
+    this.props.changePriceRange(this.state.value);
+  };
   render() {
     return (
       <React.Fragment>
+        <div className="value">{this.state.value}</div>
         <input
           type="range"
           min={0}
           max={this.props.maxPrice}
-          value="100"
+          value={this.state.value}
+          step="100"
           onChange={this.handleOnChange}
         />
-        <div className="value">{this.state.value}</div>
+
       </React.Fragment>
     );
   }
