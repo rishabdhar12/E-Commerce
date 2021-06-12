@@ -11,7 +11,7 @@ export default class Slider extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <div className="value">{this.state.value}</div>
+        <div className="value">$ {this.state.value}.00</div>
         <input
           type="range"
           min={0}
@@ -20,7 +20,6 @@ export default class Slider extends React.Component {
           step="100"
           onChange={this.handleOnChange}
         />
-
       </React.Fragment>
     );
   }

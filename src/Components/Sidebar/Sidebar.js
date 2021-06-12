@@ -5,7 +5,7 @@ import Categories from "./Categories";
 import Companies from "./Companies";
 import PriceSlider from "./PriceSlider";
 
-import "./Sidebar.css";
+import "../../Pages/Products/Products.css";
 
 const categories = [
   "all",
@@ -18,15 +18,32 @@ const companies = [
 
 const maxPrice = Math.max(...products.map((product) => product.price)) + 100;
 
-const Sidebar = ({ changeCategory, changeCompany, changePriceRange, clearFilter }) => {
+const Sidebar = ({
+  changeCategory,
+  changeCompany,
+  changePriceRange,
+  clearFilter,
+}) => {
   return (
-    <article className="Sidebar">
-      <Categories categories={categories} changeCategory={changeCategory} />
+    <>
+      <div className="form-control">
+        <h3>Category</h3>
+        <Categories categories={categories} changeCategory={changeCategory} />
+      </div>
 
-      <Companies companies={companies} changeCompany={changeCompany} />
-      <PriceSlider maxPrice={maxPrice} changePriceRange={changePriceRange} />
-      <button onClick={clearFilter}>Clear Filter</button>
-    </article>
+      <div className="form-control">
+        <h3>Companies</h3>
+        <Companies companies={companies} changeCompany={changeCompany} />
+      </div>
+
+      <div className="form-control">
+        <h3>Price</h3>
+        <PriceSlider maxPrice={maxPrice} changePriceRange={changePriceRange} />
+      </div>
+      <button className="clear-filter" onClick={clearFilter}>
+        Clear Filter
+      </button>
+    </>
   );
 };
 
