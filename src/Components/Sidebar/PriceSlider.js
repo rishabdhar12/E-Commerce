@@ -1,26 +1,27 @@
 import React from "react";
 
-export default class Slider extends React.Component {
-  state = {
-    value: 0,
+const PriceSlider = ({ maxPrice, changePriceRange }) => {
+  let init_state = {
+    value: maxPrice,
   };
-  handleOnChange = (e) => {
-    this.setState({ value: e.target.value });
-    this.props.changePriceRange(this.state.value);
+  const [state, setState] = React.useState(init_state)
+
+  const handleOnChange = (e) => {
+    setState({ value: e.target.value });
+    changePriceRange(state.value);
   };
-  render() {
-    return (
-      <React.Fragment>
-        <div className="value">$ {this.state.value}.00</div>
-        <input
-          type="range"
-          min={0}
-          max={this.props.maxPrice}
-          value={this.state.value}
-          step="100"
-          onChange={this.handleOnChange}
-        />
-      </React.Fragment>
-    );
-  }
+  return (
+    <React.Fragment>
+      <div className="value">$ {state.value}.00</div>
+      <input className="price-range"
+        type="range"
+        min={0}
+        max={maxPrice}
+        value={state.value}
+        step="100"
+        onChange={handleOnChange}
+      />
+    </React.Fragment>
+  );
 }
+export default PriceSlider;

@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 import "../../Pages/Products/Products.css";
 
@@ -8,15 +7,14 @@ const Categories = ({ categories, changeCategory }) => {
     <React.Fragment>
       {categories.map((category, index) => {
         return (
-          <div key={index}>
-            <button
-              type="button"
-              className="btn-category"
-              onClick={() => changeCategory(category)}
-            >
-              {category}
-            </button>
-          </div>
+          <button
+            type="button"
+            key={index}
+            className="btn-category"
+            onClick={() => changeCategory(category)}
+          >
+            {category}
+          </button>
         );
       })}
     </React.Fragment>
