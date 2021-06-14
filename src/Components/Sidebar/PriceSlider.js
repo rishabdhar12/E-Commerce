@@ -1,6 +1,7 @@
 import React from "react";
 
-const PriceSlider = ({ maxPrice, changePriceRange }) => {
+const PriceSlider = ({ minMaxPrice, changePriceRange }) => {
+  const [minPrice, maxPrice] = minMaxPrice;
   let init_state = {
     value: maxPrice,
   };
@@ -15,10 +16,9 @@ const PriceSlider = ({ maxPrice, changePriceRange }) => {
       <div className="value">$ {state.value}.00</div>
       <input className="price-range"
         type="range"
-        min={0}
+        min={minPrice}
         max={maxPrice}
         value={state.value}
-        step="100"
         onChange={handleOnChange}
       />
     </React.Fragment>
