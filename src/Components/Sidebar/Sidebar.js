@@ -16,7 +16,10 @@ const companies = [
   ...new Set(products.map((product) => product.company)),
 ];
 
-const maxPrice = Math.max(...products.map((product) => product.price)) + 100;
+const minMaxPrice = [
+  Math.min(...products.map((product) => product.price)),
+  Math.max(...products.map((product) => product.price)) + 100
+];
 
 const Sidebar = ({
   changeCategory,
@@ -38,7 +41,7 @@ const Sidebar = ({
 
       <div className="form-control">
         <h3>Price</h3>
-        <PriceSlider maxPrice={maxPrice} changePriceRange={changePriceRange} />
+        <PriceSlider minMaxPrice={minMaxPrice} changePriceRange={changePriceRange} />
       </div>
       <button className="clear-filter" onClick={clearFilter}>
         Clear Filter
