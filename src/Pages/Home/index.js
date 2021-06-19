@@ -27,11 +27,11 @@ const Home = () => {
           </Link>
         </article>
         <article className="hero-images">
-          <img src="/Images/hero-bcg.a876f19f.jpeg" alt="" class="img-main" />
+          <img src="/Images/hero-bcg.a876f19f.jpeg" alt="" className="img-main" />
           <img
             src="/Images/hero-bcg-2.78991864.jpeg"
             alt=""
-            class="img-secondary"
+            className="img-secondary"
           />
         </article>
       </section>
