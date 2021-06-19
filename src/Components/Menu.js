@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import "../Pages/Products/Products.css";
 
@@ -7,7 +8,9 @@ const Menu = ({ furnitureProducts }) => {
     const { id, price, name, description, img1 } = furniture;
     return (
       <div key={id}>
-        <img className="products-image" src={img1} alt="" />
+        <Link to={`/products/${id}`}>
+          <img className="products-image" src={img1} alt="" />
+        </Link>
         <div className="text">
           <p>{name}</p>
           <p>${price}</p>
