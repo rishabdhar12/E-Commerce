@@ -75,6 +75,7 @@ const Products = () => {
               </form>
             </div>
           </section>
+
           <section className="menu">
             <div className="products-container">
               <Menu furnitureProducts={state} />

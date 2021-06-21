@@ -33,10 +33,12 @@ const Navbar = () => {
           </ul>
           <div className="nav-left">
             <div className="nav-cart">
-              Cart
-              <span>
-                <FaShoppingCart />
-              </span>
+              <Link to="/cart" className="link-cart">
+                Cart
+                <span>
+                  <FaShoppingCart />
+                </span>
+              </Link>
             </div>
             <div className="nav-login">
               Login

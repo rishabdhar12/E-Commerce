@@ -30,7 +30,7 @@ export default [
     id: "3",
     category: "Office Room",
     name: "Computer Desk",
-    decription: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     img1: "/Images/products/wooden-desk.jpeg",
     img2: "/Images/products/extra-1.jpeg",
     price: 4200,
