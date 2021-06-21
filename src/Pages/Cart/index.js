@@ -2,46 +2,15 @@ import React from "react";
 
 import { CartProvider, useCart } from "react-use-cart";
 
-function Page() {
-  const { addItem } = useCart();
 
-  const products = [
-    {
-      id: 1,
-      name: "Malm",
-      price: 9900,
-    },
-    {
-      id: 2,
-      name: "Nordli",
-      price: 16500,
-    },
-    {
-      id: 3,
-      name: "Kullen",
-      price: 4500,
-    },
-  ];
-
-  return (
-    <div>
-      {products.map((p) => (
-        <div key={p.id}>
-          <button onClick={() => addItem(p)}>Add to cart</button>
-        </div>
-      ))}
-    </div>
-  );
-}
-
-function Cart() {
+const Cart = (props) => {
   const { isEmpty, totalUniqueItems, items, updateItemQuantity, removeItem } =
     useCart();
 
   if (isEmpty) return <p>Your cart is empty</p>;
 
   return (
-    <>
+    <React.Fragment>
       <h1>Cart ({totalUniqueItems})</h1>
 
       <ul>
@@ -62,14 +31,13 @@ function Cart() {
           </li>
         ))}
       </ul>
-    </>
+    </React.Fragment>
   );
 }
 
 function myCart() {
   return (
     <CartProvider>
-      <Page />
       <Cart />
     </CartProvider>
   );

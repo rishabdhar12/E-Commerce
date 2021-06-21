@@ -3,10 +3,9 @@ import { useState, useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
 // data
 import products from '../../data/data';
+import { useCart } from 'react-use-cart';
 
 const SingleProduct = () => {
-
-  console.log("Hello from single product");
   const [product, setProduct] = useState([]);
   const [amount, setAmount] = useState(1);
   const { id } = useParams();
@@ -16,10 +15,13 @@ const SingleProduct = () => {
     setProduct(newProduct);
   }, []);
 
+  // add to cart
+
+  const { addItem } = useCart();
+
   const decreaseAmount = (e) => {
     e.preventDefault();
-    if (e.target.value == 0) {
-      console.log(e.target.value);
+    if (amount === 0) {
       setAmount(0);
       return;
     }
@@ -29,7 +31,6 @@ const SingleProduct = () => {
 
   const increaseAmount = (e) => {
     e.preventDefault();
-    console.log(e.target.value);
     setAmount(amount + 1);
     return;
   }
@@ -37,30 +38,33 @@ const SingleProduct = () => {
     <div className="single-page-container" key={id}>
       {/* back to product page */}
       <Link to='/products' className='single-page-btn'>Back To Products</Link>
-      {/* product name and price */}
-      <div>
-        <h1>{product.name}</h1>
-        <h4>{product.price}</h4>
-      </div>
 
       {/* images */}
-      <div>
+      <section>
         <img src={product.img1} alt="" />
-        <img src={product.img2} alt="" />
-      </div>
+        <div className="Gallery">
+          <img src={product.img1} alt="" />
+          <img src={product.img2} alt="" />
+        </div>
+      </section>
       {/* description, availability, freeshiping, company name  */}
-      <div>
-        <p>{product.description}</p>
-        <span>
-          <p>Available:{
+      <section className="content">
+        {/* product name and price */}
+        <div className="">
+          <h2>{product.name}</h2>
+          <h5>${product.price}</h5>
+        </div>
+        <p className="desc">{product.decription}</p>
+        <p><span>Available:</span>
+          {
             product.available ? "In Stock" : "Not In Stock"
-          }</p>
-          <p>Shiping Charge: {
-            product.freeshiping ? "Freeshiping" : "Shipping Charges apply"
-          }</p>
-          <p>Brand: {product.company}</p>
-        </span>
-      </div>
+          }
+        </p>
+        <p><span> Shiping Charge: </span>{
+          product.freeshiping ? "Freeshiping" : "Shipping Charges apply"
+        }</p>
+        <p><span>Brand: </span>{product.company}</p>
+      </section>
       {/* add items and amount button */}
       <div>
         <span>
@@ -69,7 +73,7 @@ const SingleProduct = () => {
           <button className='amount-btn' onClick={increaseAmount}>+</button>
         </span>
         <span>
-          <button className="single-page-btn">Add to cart</button>
+          <button className="single-page-btn" onClick={() => addItem(product, amount)}>Add to cart</button>
         </span>
 
       </div>

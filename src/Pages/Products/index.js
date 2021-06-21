@@ -52,7 +52,6 @@ const Products = () => {
   };
 
   const changePriceRange = (priceRangeSelected) => {
-    console.log(priceRangeSelected);
     dispatch({ type: ACTION.change_price_range, payload: priceRangeSelected });
   };
   const clearFilter = () => {
