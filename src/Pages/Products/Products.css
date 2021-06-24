@@ -63,7 +63,7 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem 1.5rem;
 }
-.price-range{
+.price-range {
   direction: ltr;
 }
 .text {

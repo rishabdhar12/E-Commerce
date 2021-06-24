@@ -1,8 +1,10 @@
 import React from "react";
+import Login from "./Login/login";
 
 import { Link } from "react-router-dom";
 import { FaShoppingCart } from "react-icons/fa";
-import { BsPersonPlusFill } from "react-icons/bs";
+import Logout from "./Login/Logout";
+// import { BsPersonPlusFill } from "react-icons/bs";
 
 const Navbar = () => {
   return (
@@ -40,12 +42,8 @@ const Navbar = () => {
                 </span>
               </Link>
             </div>
-            <div className="nav-login">
-              Login
-              <span>
-                <BsPersonPlusFill />
-              </span>
-            </div>
+            <Login />
+            <Logout />
           </div>
         </div>
       </nav>
