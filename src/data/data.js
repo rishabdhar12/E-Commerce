@@ -2,7 +2,7 @@ export default [
   {
     id: "1",
     category: "Bedroom",
-    name: "Bed",
+    name: "Cozy Bed",
     decription:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel recusandae molestiae unde non suscipit sint consequuntur consectetur pariatur atque est.Lorem ipsum dolor sit amet consectetur adipisicing elit.Dicta, voluptatem.",
     img1: "/Images/products/featured-bed.jpg",
@@ -16,7 +16,7 @@ export default [
   {
     id: "2",
     category: "Bedroom",
-    name: "Sofa",
+    name: "Modern Sofa",
     decription:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel recusandae molestiae unde non suscipit sint consequuntur consectetur pariatur atque est.Lorem ipsum dolor sit amet consectetur adipisicing elit.Dicta, voluptatem.",
     img1: "/Images/products/sofa.jpg",
@@ -67,7 +67,7 @@ export default [
   {
     id: "6",
     category: "Kitchen",
-    name: "Shelf",
+    name: "Mega Shelf",
     decription:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel recusandae molestiae unde non suscipit.",
     img1: "/Images/products/bar-stool.jpg",
