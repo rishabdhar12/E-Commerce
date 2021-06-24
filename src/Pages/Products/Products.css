@@ -4,9 +4,8 @@
   --maximum-height: 1100px;
   --radius: 0.25rem;
 }
-
 .page {
-  min-height: calc(80vh - 10rem);
+  min-height: calc(80vh + 10rem);
 }
 .section-center {
   width: 95vw;
@@ -15,7 +14,7 @@
   display: grid;
   gap: 3rem 1.5rem;
   grid-template-columns: 200px 1fr;
-  margin: 4rem auto 10rem auto;
+  margin: 0 auto 10rem auto;
 }
 .content {
   position: sticky;
