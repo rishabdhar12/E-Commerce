@@ -57,7 +57,7 @@ export default [
     name: "Dining Table",
     decription:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel recusandae molestiae unde non suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit.Dicta, voluptatem.",
-    img1: "/Images/products/kitchen-table.jpeg",
+    img1: "/Images/products/kitchen-table-copy.jpeg",
     img2: "/Images/products/extra-1.jpeg",
     price: 2100,
     company: "IKEA",
