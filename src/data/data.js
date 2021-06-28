@@ -9,9 +9,7 @@ export default [
     img2: "/",
     price: 3200,
     company: "Austin",
-    freeshiping: true,
     available: true,
-
   },
   {
     id: "2",
@@ -23,7 +21,6 @@ export default [
     img2: "/Images/products/extra-1.jpeg",
     price: 3200,
     company: "Tata",
-    freeshiping: true,
     available: true,
   },
   {
@@ -35,7 +32,6 @@ export default [
     img2: "/Images/products/extra-1.jpeg",
     price: 4200,
     company: "IKEA",
-    freeshiping: true,
     available: true,
   },
   {
@@ -48,7 +44,6 @@ export default [
     img2: "/Images/products/extra-1.jpeg",
     price: 5200,
     company: "Tesla",
-    freeshiping: true,
     available: true,
   },
   {
@@ -61,7 +56,6 @@ export default [
     img2: "/Images/products/extra-1.jpeg",
     price: 2100,
     company: "IKEA",
-    freeshiping: true,
     available: true,
   },
   {
@@ -74,7 +68,6 @@ export default [
     img2: "/Images/products/extra-1.jpeg",
     price: 3100,
     company: "DKR",
-    freeshiping: true,
     available: true,
   },
 ];
