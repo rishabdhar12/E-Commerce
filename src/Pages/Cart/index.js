@@ -15,7 +15,18 @@ const Cart = (props) => {
     emptyCart,
   } = useCart();
 
-  if (isEmpty) return <p>Your cart is empty</p>;
+  const calcSubTotal = (cart) => {
+    let subTotal = cart.map((item) => item.price * item.quantity);
+
+    let total = subTotal.length !== 0 ? subTotal.reduce((i, next_i) => i + next_i) : 0;
+    return total;
+  }
+
+  let orderTotal = calcSubTotal(items);
+
+  if (isEmpty) {
+    return <p>Your cart is empty</p>;
+  } //change here
 
   return (
     <main className="page">
@@ -33,7 +44,7 @@ const Cart = (props) => {
         <article className="cp-item">
           {items.map((item, id) => {
             return (
-              <div key={id}>
+              <React.Fragment key={id}>
                 <div className="title">
                   <img src={item.img1} alt="" />
                   <h5>{item.name}</h5>
@@ -63,7 +74,7 @@ const Cart = (props) => {
                 >
                   <MdRemoveShoppingCart />
                 </button>
-              </div>
+              </React.Fragment>
             );
           })}
         </article>
@@ -81,14 +92,14 @@ const Cart = (props) => {
             <article>
               <div>
                 <h5>
-                  Subtotal: <span>{item.quantity * item.price}</span>
+                  Subtotal: <span>{orderTotal}</span>
                 </h5>
                 <p>
-                  Shipping Fee: <span>Free</span>
+                  Shipping Fee: <span>7</span>
                 </p>
                 <hr />
                 <h4>
-                  Order total : <span>{item.quantity * item.price}</span>
+                  Order total : <span>{orderTotal + 7}</span>
                 </h4>
               </div>
             </article>
